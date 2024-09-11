@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do You Love Me?</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 3em;
+            margin-top: 20px;
+        }
+        .heart {
+            color: red;
+            font-size: 5em;
+        }
+        .gif-container {
+            margin-top: 30px;
+            margin: 0 auto;
+        
+        }
+        img {
+            width: 300px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-right: 400px;
+        }
+        .buttons {
+            margin-top: 50px;
+        }
+        button {
+            padding: 15px 25px;
+            font-size: 1.5em;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 8px;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+        .yes {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .yes:hover {
+            background-color: #45a049;
+        }
+        .no {
+            background-color: #f44336;
+            color: white;
+        }
+        .no:hover {
+            background-color: #d32f2f;
+        }
+        .response {
+            margin-top: 20px;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Do You Love Me? 💍</h1>
+    <div class="heart">❤️</div>
+
+    <!-- GIF romantique -->
+    <div class="gif-container">
+        <img src="image.GIF" alt="romantic-gif"
+    </div>
+
+    <div class="buttons">
+        <button class="yes" onclick="showYes()">Yes</button>
+        <button class="no" onclick="showNo()">No</button>
+    </div>
+    <div id="response" class="response"></div>
+
+    <script>
+        function showYes() {
+            document.getElementById('response').textContent = "Yay! I'm the happiest person in the world! 🎉💖";
+        }
+
+        function showNo() {
+            document.getElementById('response').textContent = "Oh no! My heart is broken 💔😭";
+        }
+    </script>
+</body>
+</html>
